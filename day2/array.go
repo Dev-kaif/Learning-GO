@@ -26,5 +26,8 @@ func main5() {
 
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 
+	// Zero value of array
+	// s := [6]int{} // output : [0 0 0 0 0 0]
+
 	fmt.Println(primes)
 }

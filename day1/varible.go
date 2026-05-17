@@ -2,29 +2,41 @@ package main
 
 import "fmt"
 
-// initialise varible with var and its type at the end
-// varible in Go is always initialise in zero state
-// varible is never initlaised in null state
+// initialize variable with var and its type at the end
+
+// variables in Go are always initialized with zero values
+// variables are never uninitialized/garbage like in some other languages
+
+// zero values:
+// int     -> 0
+// float   -> 0
+// bool    -> false
+// string  -> ""
+
 var c, python, com bool
 
 func main2() {
 	var x int
 
-	// another way of initializing the variable with value
-	// defined type
+	// another way of initializing variable with value
+	// explicitly defined type
 	var j int = 10
 
-	// intrupted type
+	// inferred type
 	var l = 10
 
 	var s string
 	var f float32
 
-	// shoter way of initializing the variable with value
+	// shorter way of initializing variable with value
+	// := can only be used inside functions
 	i := 0
 
 	fmt.Println(x, i, j, l, c, python, com)
 
-	// %v is value , %q prints string with qoute , %T shows type
+	// %v -> value
+	// %q -> string with quotes
+	// %T -> type
+
 	fmt.Printf("%v , %v , %T, %q \n", x, f, c, s)
 }

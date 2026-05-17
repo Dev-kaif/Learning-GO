@@ -18,7 +18,7 @@ func compute(fn func(float64, float64) float64) float64 {
 	return fn(3, 4)
 }
 
-func main() {
+func main5() {
 
 	// anonymous function
 	// function without a name

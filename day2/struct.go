@@ -44,4 +44,15 @@ func main4() {
 
 	// to print actual value:
 	// fmt.Println(*p)
+
+	// ---------------- Zero value of struct ----------------
+
+	var z Vertex
+
+	// all fields get their own zero values automatically
+	// int -> 0
+	// string -> ""
+	// bool -> false
+
+	fmt.Println(z) // output: {0 0}
 }
